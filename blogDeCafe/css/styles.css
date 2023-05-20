@@ -1,0 +1,301 @@
+:root {
+    --fontHeding: "PT Sans", sans-serif;
+    --fontParagraph: "Open Sans", sans-serif;
+    --primray: #784D3C;
+    --white: #fff;
+    --black: #000;
+    --light: #e1e1e1;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--fontParagraph);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/* Globales */
+
+.container {
+    /*max-width: 120rem;*/
+    /*width: 90%;*/
+    margin: 0 auto;
+    width: min(120rem, 90%);
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--fontHeding);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+
+h4 {
+    font-size: 2.8rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+.webp .header {
+    background-image: url("../img/banner.webp");
+}
+
+.no-webp .header {
+    background-image: url("../img/banner.jpg");
+}
+
+.header {
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header__text {
+    text-align: center;
+    color: var(--white);
+    margin-top: 5rem;
+}
+
+@media (min-width: 768px) {
+    .header__text {
+        margin-top: 15rem;
+    }
+}
+
+
+.barra {
+    padding-top: 4rem;
+}
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+.logo {
+    color: var(--white);
+}
+
+.logo__nombre {
+    font-weight: normal;
+}
+
+
+.logo_bold {
+    font-weight: bold;
+}
+
+.nav-header {
+
+}
+
+
+@media (min-width: 758px) {
+    .nav-header {
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+.nav-header__link {
+    display: block;
+    text-align: center;
+    color: var(--white);
+    font-size: 1.8rem;
+}
+
+@media (min-width: 768px) {
+    .main-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+}
+
+
+.entry {
+    border-bottom: 1px solid var(--light);
+    margin-bottom: 2rem;
+}
+
+.entry:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.btn {
+    display: block;
+    font-family: var(--fontHeding);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border: none;
+}
+
+@media (min-width: 768px) {
+    .btn {
+        display: inline-block;
+    }
+}
+
+.btn--primary {
+    background-color: var(--black);
+}
+
+.btn--secondary {
+    background-color: var(--primray);
+}
+
+.curso {
+    list-style: none;
+}
+
+.widget__curse {
+    border-bottom: 1px solid var(--light);
+    margin-bottom: 2rem;
+}
+
+.widget__curse:last-of-type {
+    border: none;
+    margin-bottom: 0;
+}
+
+.widget-curso__label {
+    font-family: var(--fontHeding);
+    font-weight: 700;
+}
+
+.widget-curso__info {
+    font-weight: normal;
+}
+
+.footer {
+    background-color: var(--black);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+}
+
+@media (min-width: 768px) {
+    .about-us {
+        display: flex;
+        gap: 2rem
+    }
+
+
+    .about-us__img,
+    .about-us__text {
+        flex-basis: 50%;
+    }
+}
+
+.course {
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--light);
+}
+
+.curso:last-of-type {
+    border: none;
+}
+
+@media (min-width: 768px) {
+    .course {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+}
+
+.course__label {
+    font-weight: bold;
+    font-family: var(--fontHeding);
+}
+
+.course__info {
+    font-weight: normal;
+}
+
+.course__label,
+.course__info {
+    font-size: 2rem;
+}
+
+.contact-bg {
+    background-image: url("../img/contacto.jpg");
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.form {
+    background-color: var(--white);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+    border-radius: 1rem;
+}
+
+.field {
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.field__label {
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 2rem;
+}
+
+.field__input {
+    flex: 1;
+    padding: 1rem;
+    border: 1px solid var(--light);
+}
+
+.field--textarea {
+    height: 20rem;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
